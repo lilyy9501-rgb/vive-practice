@@ -1,0 +1,125 @@
+/* 기본 스타일 초기화 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Malgun Gothic', sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 퀴즈 박스 컨테이너 */
+.quiz-container {
+    background-color: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+/* 개별 문제 스타일 */
+.question-item {
+    margin-bottom: 25px;
+}
+
+.question-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 12px;
+}
+
+/* 보기(라디오버튼) 스타일 */
+.options-list label {
+    display: block;
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.options-list label:hover {
+    background-color: #edf2f7;
+}
+
+.options-list input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* 버튼 스타일 */
+button {
+    display: block;
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* 결과창 스타일 */
+.result-box {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e8f8f5;
+    border: 1px solid #a3e4d7;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.result-box h2 {
+    color: #16a085;
+    margin-bottom: 10px;
+}
+
+#score-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.hidden {
+    display: none;
+}
