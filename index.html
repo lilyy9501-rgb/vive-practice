@@ -1,0 +1,30 @@
+# vive-practice
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ 5분 역사 퀴즈 ⚡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>📜 중3 한국사 미니 퀴즈</h1>
+        <p class="subtitle">수업 시작 전, 나의 역사 실력을 확인해봐요!</p>
+        <hr>
+        
+        <div id="quiz-box">
+            </div>
+
+        <button id="submit-btn" onclick="calculateScore()">정답 제출하기</button>
+        
+        <div id="result" class="result-box hidden">
+            <h2>📊 채점 결과</h2>
+            <p id="score-text"></p>
+            <button onclick="resetQuiz()">다시 풀기</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
